@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" 
+	type="text/css" 
+	href="style.css"/>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        function myalert(){
+            var volume;
+            var radius = document.getElementById('radius').value;
+            radius = Math.abs(radius);
+            volume = (4/3) * Math.PI * Math.pow(radius, 3);
+            volume = volume.toFixed(2);
+
+            let result = document.getElementById('volume');
+            result.value = volume;
+        
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <h3>Please enter a value for radius below!</h3>
+    <p1>The form below allows you to enter an input value for a radius and uses it to calculate the volume of a sphere!</p1>
+    <br><br>
+    <div class="sphere form">
+        <label for="radius">Radius:</label><br>
+        <input type="text" id="radius" name="sphere-radius" value=0><br>
+        <input type="submit" value="Submit" onclick="myalert()">
+        <br><br>
+        <label for="volume">Volume:</label><br>
+        <input type="text" id="volume" name="sphere-volume" value=0><br>
+
+
+
+      </form></div>
+    <div class="footer">
+    </div>
+</body>
+</html>
