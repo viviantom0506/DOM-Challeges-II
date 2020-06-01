@@ -1,24 +1,15 @@
-// function checkPassWord() {
-//     let p1 = document.getElementById('password').value;
-//     console.log("hello");
-//     if (p1 === '12345678') {
-// console.log("hello");
-//                alert("Password matched!");
-//     } else {
-//         alert("Password mismatch!");
-//     }
-// }
 
-document.querySelector('form').addEventListener('submit', function password (e){
+document.querySelector('form').addEventListener('submit', function (e){
     e.preventDefault();
-    let p1 = document.querySelector('password').value;
- 
-    if( p1 === '12345678') {
-        alert("Password matched!");
+    let p1 = document.getElementById('password').value;
+    let username = document.getElementById('username');
+    let tagofH1 = document.getElementById("form");
+    if( p1 === '12345678' && username != "") {
+        tagofH1.innerText = "Filled out!";   
     }
     else {
         alert("Wrong!");
     }
-
+    
     
 });
