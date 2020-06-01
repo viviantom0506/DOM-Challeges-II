@@ -1,3 +1,4 @@
+
 <!-- Create an HTML page with two buttons that argue with each other. 
 When one button is clicked, the text "I'm right" should be placed next to it. 
 When the other button is clicked, the text is replaced with, "No, I'm right!" -->
@@ -5,19 +6,36 @@ When the other button is clicked, the text is replaced with, "No, I'm right!" --
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="test/ss" href="style.css">
+    <link rel = "stylesheet" 
+	type="text/css" 
+	href="style.css"/>
     <meta charset="UTF-8">
     <title>Who is Right?</title>
 </head>
 <body>
-    <button id="1">Button 1</button>
-    <button id="2">Button 2</button>
+    <h3>The two buttons below are attempting to decide who's right!</h3>
+    <br><br>
+    <div class ="button one addition">
+        <button id="1">Button 1</button>
+        <p1 id="txt1"></p1>
+    </div>
+    <br>
+    <div class ="button two addition">
+        <button id="2">Button 2</button>
+        <p1 id="txt2"></p1>
+    </div>
+
     <script>
-        let button = document.querySelectorAll("button");
-        button.addEventListener("click", event => {
-            
-        }
-    });
+        let button1 = document.getElementById("1")
+        let button2 = document.getElementById("2")
+        button1.addEventListener("click", event => {
+            txt1.innerText= "I'm Right"
+            txt2.innerText= ""
+        });
+        button2.addEventListener("click", event => {
+            txt2.innerText= "No! I'm Right!"
+            txt1.innerText= ""
+        });
     </script>   
 </body>
 </html>
