@@ -10,14 +10,27 @@ When the other button is clicked, the text is replaced with, "No, I'm right!" --
     <title>Who is Right?</title>
 </head>
 <body>
-    <button id="1">Button 1</button>
-    <button id="2">Button 2</button>
+    <div class ="button one addition">
+        <button id="1">Button 1</button>
+        <p1 id="txt1"></p1>
+    </div>
+    <br>
+    <div class ="button two addition">
+        <button id="2">Button 2</button>
+        <p1 id="txt2"></p1>
+    </div>
+
     <script>
-        let button = document.querySelectorAll("button");
-        button.addEventListener("click", event => {
-            
-        }
-    });
+        let button1 = document.getElementById("1")
+        let button2 = document.getElementById("2")
+        button1.addEventListener("click", event => {
+            txt1.innerText= "I'm Right"
+            txt2.innerText= ""
+        });
+        button2.addEventListener("click", event => {
+            txt2.innerText= "No! I'm Right!"
+            txt1.innerText= ""
+        });
     </script>   
 </body>
 </html>
