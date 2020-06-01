@@ -9,9 +9,10 @@
 //     }
 // }
 
-document.querySelector('form').addEventListener('submit', function (e){
+document.querySelector('form').addEventListener('submit', function password (e){
     e.preventDefault();
-    let p1 = document.getElementsById('password').value;
+    let p1 = document.querySelector('password').value;
+ 
     if( p1 === '12345678') {
         alert("Password matched!");
     }
