@@ -1,0 +1,47 @@
+*{
+	margin: 10px;
+	padding: 0;
+	font-family: Century Gothic;
+	}
+
+header{
+}
+
+body{
+	margin: 0;
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+	float: left;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+.title{
+	text-decoration: none;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+}
+
+.sphereform{
+	color: blue;
+}
+.title h2{
+	color: #101DED;
+	font-size: 20px;
+}
+
+p1{
+	color: #101DED;
+	
+}
+
+
+h3{
+	color: #101DED;
+}
