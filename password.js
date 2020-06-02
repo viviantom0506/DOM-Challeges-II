@@ -1,4 +1,4 @@
-
+//checks if the password is right when the user clicks on the submit button
 document.querySelector('form').addEventListener('submit', function (e){
     e.preventDefault();
     let p1 = document.getElementById('password').value;
